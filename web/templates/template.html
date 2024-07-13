@@ -1,0 +1,23 @@
+{% load static %}
+<html>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  <title>{% block title %}این یک پروژه متن باز خواهد بود.{% endblock%}</title>
+  <link rel="stylesheet" href="{% static 'css/color.css' %}">
+  <body>
+    {% block content %}
+    {% endblock %}
+    <footer class="footer fixed-bottom m-3">
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #3a4925;">
+        © 2028 Copyright:
+        <p><a class="text-secondary text-decoration-none" href="https://github.com/abolfazl-sh">Abi</a></p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+  
+
+
+</html>

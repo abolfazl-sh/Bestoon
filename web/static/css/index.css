@@ -1,0 +1,10 @@
+.login_form {
+background-color: #d6e87e;
+padding: 10px;
+border-radius: 10px;
+
+}
+
+.login_form:hover{
+    opacity: 98%;
+}

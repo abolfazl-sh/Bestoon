@@ -30,3 +30,14 @@ def submit_income(request):
         'status': 'ok',
     }, encoder=JSONEncoder)
 
+def index(request):
+    context = {}
+    return render(request, 'index.html', context)
+
+def logout(request):
+    context = {}
+    return render(request, 'logout.html', context)
+
+def signup(request):
+    context = {}
+    return render(request, 'signup.html', context)
