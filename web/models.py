@@ -10,6 +10,8 @@ class Token(models.Model):
     def __str__(self):
         return f"{str(self.user).title()}_token"
 
+
+
 class Expense(models.Model):
     text = models.CharField(max_length=255)
     date = models.DateTimeField()

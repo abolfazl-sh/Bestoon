@@ -1,13 +1,16 @@
 {% load static %}
 <html>
-  {% load bootstrap5 %}
-  {% bootstrap_css %}
-  {% bootstrap_javascript %}
-  <title>{% block title %}این یک پروژه متن باز خواهد بود.{% endblock%}</title>
-  <link rel="stylesheet" href="{% static 'css/color.css' %}">
-  <body>
-    {% block content %}
-    {% endblock %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% block innerscript %}
+{% endblock %}
+<title>{% block title %}این یک پروژه متن باز خواهد بود.{% endblock%}</title>
+<link rel="stylesheet" href="{% static 'css/color.css' %}">
+
+<body>
+  {% block content %}
+  {% endblock %}
     <footer class="footer fixed-bottom m-3">
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: #3a4925;">
@@ -16,8 +19,9 @@
       </div>
       <!-- Copyright -->
     </footer>
-  </body>
-  
+
+</body>
+
 
 
 </html>
